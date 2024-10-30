@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex Page</title>
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background: url('https://images.wallpaperscraft.com/image/single/gecko_lizard_wildlife_1322478_1280x720.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2em;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            justify-content: space-between;
+        }
+
+        .content div {
+            flex: 1 1 45%;
+            margin: 10px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media(max-width: 768px) {
+            .content div {
+                flex: 1 1 100%;
+            }
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
+            /* Прибираємо відступ у останнього елемента */
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Hello world</h1>
+        <nav>
+            <ul>
+                <li><a href="Завдання 2.1.html">First</a></li>
+                <li><a href="about.html">Skills</a></li>
+                <li><a href="contact.html">Feedback</a></li>
+                <li><a href="Завдання 4.html">Flex Сторінка</a></li>
+                <li><a href="Завдання 3.html">Parallax Effect</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <h2 style="color: black;">Explore the Europe</h2>
+    </div>
+
+    <div class="content">
+        <div>
+            <img src="images/image_47473.jpg" alt="Mountain View" width="500" height="350">
+            <h3>Mountain View</h3>
+            <p>Mountains, majestically rising above the earth, fill the world with beauty and mystery, as if guarding the ancient secrets of nature.
+            </p>
+        </div>
+        <div>
+            <img src="images/image_237474.jpg" alt="Beach View" width="500" height="350">
+            <h3>Beach View</h3>
+            <p>The beach, with its soft sands and gentle waves, invites relaxation and adventure under the warm sun.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
